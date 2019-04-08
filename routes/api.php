@@ -24,6 +24,8 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('/welcome', function(){
+	$user = App\User::where('id', 1)->first();
+	return $user->createToken(config('app.name'))->accessToken;
 	return 'Welcome Brother';
 });
 
