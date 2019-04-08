@@ -1,0 +1,3 @@
+config local env https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
+
+cors must work // https://stackoverflow.com/questions/29045413/laravel-5-angularjs-cross-domain-cors

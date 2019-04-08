@@ -1,0 +1,8 @@
+One Minute
+Your time limit is one minute only.  Within this time period you have type correct word as many as you can.
+Two Minutes
+Your time limit is two minutes. Within this time period you have to type a paragraph given to you. Your challenge is to type words correctly.
+Three Minutes
+Your time limit is three minutes. Within this time period you have to type a paragraph given to you. Your challenge is to type words correctly.
+Arcade
+In this game mode, you have to type the given word correctly to get the next word. Here, your challenge is to type all the words in the shortest possible time.

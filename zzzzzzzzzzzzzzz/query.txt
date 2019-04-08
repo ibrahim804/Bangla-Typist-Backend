@@ -1,0 +1,8 @@
+sql query
+select user_id, score from (select user_id, max(score) as score from plays where game_id = 1 group by user_id) as plays order by score desc limit 5
+
+query builder score
+
+select user_id, score, users.name from (select user_id, max(score) as score from plays where game_id = 1 group by user_id) as plays join users on users.id = plays.user_id order by score desc limit 5
+
+select user_id, time, users.name from (select user_id, min(finished_at-started_at) as time from plays where game_id = 4 group by user_id) as plays join users on users.id = plays.user_id order by time asc limit 5

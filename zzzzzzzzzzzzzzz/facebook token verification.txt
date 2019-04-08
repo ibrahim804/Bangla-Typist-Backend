@@ -1,0 +1,10 @@
+use GuzzleHttp\Client;
+Route::get('/', function(Request $request){
+	$client = new Client();
+	$a = 'EAAFMccwzFTABALvfLuzuDmaUQQhA8tkVfR8GNO4SymCkpJGvmy94GekVlMtr2L5RN4PsdURWQMgN34ZAd1ulpYGlCp5RCxuvXmrT4W4iY2lK3PEX11XVpD81isUxIRad11a8HRJkZC9zkZBv1zvPIusTVqdWLdapFteCA6qNYbIUAtFNMO9jDOshjuFiZBzHEVsepZC1bkAZDZD';
+	$b = '365526617625904|W3hUmTznW6577U14PuEmK5RMClI';
+    $res = $client->get('https://graph.facebook.com/debug_token?%20input_token='.$a.'%20&access_token='.$b);
+    $array = json_decode($res->getBody(), true); 
+    $isValid = ($array['data']['is_valid']) ? 'true':'false';
+    return $isValid;
+});

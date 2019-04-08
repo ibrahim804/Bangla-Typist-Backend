@@ -1,0 +1,10 @@
+graph.facebook.com/debug_token?%20
+     input_token=EAADl8cz75IwBACou7zlQRaw9ZCgEzxACASmYAMdXBhcgJuk1nUNWIQHksUMFkZCwJqpNXJDzVPZBASuLrL0KsyW084nBX6wgCNncttTZAFGZAD6cTLyKB1kSF6uiBVx3rZBusyZA999pWZCJ3tOzZAkLSZC9ZBBcaFnXspblBVvZAMuvrLRKZAoa1o9Le6XquEaCVxL3fQOtcoUwrSwZDZD
+     %20&access_token=252826688939148|uSDAldwIM263rYdvbWeEsRCNOZM
+
+or 
+
+
+graph.facebook.com/debug_token?
+     input_token=EAADl8cz75IwBACv7QAjnkKEridpR27I3AETJ1fwltDH36ZCZBmzZA2i1CEP3J3eycVn89c0coOq9CFyXw74NEwEuSHjAtTQOCHktZBhITAPP7VNRvkBc1EZBAVhuaTVCZBZAsOnhv8ZAfR6ZAqmR48Y3k352epwHcs7MmVpqZBpPLnputJ45UvnzUn9gC3P8RZCvyBig10tPQjhwgZDZD
+     &access_token=252826688939148|uSDAldwIM263rYdvbWeEsRCNOZM
