@@ -30,7 +30,7 @@ class AuthServiceProvider extends ServiceProvider
         Passport::tokensExpireIn(now()->addDays(15));
         Passport::refreshTokensExpireIn(now()->addDays(30));
 
-        Passport::loadKeysFrom('/secret-keys/oauth');
+        // Passport::loadKeysFrom('/secret-keys/oauth');
         
     }
 }
