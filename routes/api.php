@@ -48,4 +48,4 @@ Route::middleware('cors')->group(function(){
 
 });
 
-// HELLO PEOPLE
+// HELLO PEOPLE, No FrontSide
