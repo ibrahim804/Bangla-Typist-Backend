@@ -60,9 +60,9 @@ class Handler extends ExceptionHandler
             app('sentry')->captureException($exception);
         }
 
-        if ($exception instanceof Exception) {
-            return $this->getErrorMessage('Something went wrong. Please check out your header, token, route and credentials');
-        }
+        // if ($exception instanceof Exception) {
+        //     return $this->getErrorMessage('Something went wrong. Please check out your header, token, route and credentials');
+        // }
 
         return parent::render($request, $exception);
     }
