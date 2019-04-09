@@ -30,6 +30,7 @@ Route::get('/welcome', function(){
 Route::middleware('cors')->group(function(){
 
    	Route::get('game', 'GameController@index');
+   	Route::post('game', 'GameController@store');
 
 	Route::get('paragraph/{game_id}', 'ParagraphController@show');
 	Route::post('paragraph', 'ParagraphController@store');
