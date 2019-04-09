@@ -12,7 +12,7 @@ class GameController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth:api')->only(['index', 'store']);
+        $this->middleware('auth:api')->only(['index']);
         // $this->middleware('auth')->except(['update']);
     }
 
@@ -34,27 +34,27 @@ class GameController extends Controller
         ];
     }
 
-    public function store(Request $request)
-    {
+    // public function store(Request $request)
+    // {
         
-        $validate_attributes = $this->validateGame();
-        $game = Game::create($validate_attributes);
+    //     $validate_attributes = $this->validateGame();
+    //     $game = Game::create($validate_attributes);
 
-        return
-        [
-            [
-                'status' => 'OK',
-                'name' => $game->name,
-                'description' => $game->description
-            ]
-        ];
-    }
+    //     return
+    //     [
+    //         [
+    //             'status' => 'OK',
+    //             'name' => $game->name,
+    //             'description' => $game->description
+    //         ]
+    //     ];
+    // }
 
-    private function validateGame()
-    {
-        return request()->validate([                           // For DATABASE Validation
-            'name' => ['required', 'min:1', 'max:20'],
-            'description'  => ['min:10'],
-        ]);
-    }
+    // private function validateGame()
+    // {
+    //     return request()->validate([                           // For DATABASE Validation
+    //         'name' => ['required', 'min:1', 'max:20'],
+    //         'description'  => ['min:10'],
+    //     ]);
+    // }
 }
